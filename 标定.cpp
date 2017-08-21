@@ -19,7 +19,7 @@ const int frameNumber = 18;                             //相机标定时需要�
 const int squareSize = 23;                              //标定板黑白格子的边长，单位mm  
 const Size boardSize = Size(boardWidth, boardHeight);   //标定板角点
 
-char namestring[30] = "G:\\im\\IMG%d_.jpg";
+char namestring[30] = "G:\\im\\IMG%d_.jpg";				//图像路径
 
 Mat intrinsic(3, 3, CV_64FC1, Scalar::all(0.0));		//相机内参矩阵  
 Mat distortion_coeff(8, 1, CV_64FC1, Scalar::all(0.0)); //相机畸变参数 
